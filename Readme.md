@@ -1,7 +1,7 @@
 ## API DOCS
 
 #### GET FOOD BY FOODNAME
-#### /food/find
+#### PATH => /food/find
 
 #### Post Body
 ```javascript
