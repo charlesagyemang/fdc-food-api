@@ -19,7 +19,7 @@ describe('Food::Routes', async () => {
   });
   it.only('should get single food details successfully', async () => {
     const { body } = await request(server).post('/api/food/find').send({ foodName: 'cabbage' });
-    console.log(body);
+    console.log(body[0]);
     // expect(statusCode).toBe(HTTPStatus.OK);
     // expect(body).toHaveProperty('data');
     // expect(body.data).toBe('Ping');
