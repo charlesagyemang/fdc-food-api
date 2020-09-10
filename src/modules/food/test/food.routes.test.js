@@ -1,6 +1,7 @@
 import HTTPStatus from 'http-status';
 import request from 'supertest-as-promised';
 import server from '../../../server';
+import { scrapeSiteByUrl } from '../../../helpers/scrapping_helper';
 
 describe('Food::Routes', async () => {
   it.skip('should ping foods route successfully', async () => {
@@ -18,8 +19,10 @@ describe('Food::Routes', async () => {
     // expect(body.data).toBe('Ping');
   });
   it.only('should get single food details successfully', async () => {
-    const { body } = await request(server).post('/api/food/find').send({ foodName: 'cabbage' });
-    console.log(body[0]);
+    const { body } = await request(server).post('/api/food/find').send({ foodName: 'pepper' });
+    const $ = await scrapeSiteByUrl('https://google.com/');
+    console.log($('#SIvCob').text());
+    console.log(body);
     // expect(statusCode).toBe(HTTPStatus.OK);
     // expect(body).toHaveProperty('data');
     // expect(body.data).toBe('Ping');
