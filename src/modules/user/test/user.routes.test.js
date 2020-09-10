@@ -9,8 +9,9 @@ describe('User::Routes', async () => {
     await nuke();
   });
 
-  it.skip('should login successfully', async () => {
+  it.only('should login successfully', async () => {
     await User.create({
+      name: 'Kofi',
       email: 'test@email.com',
       password: 'password',
     });
@@ -19,6 +20,8 @@ describe('User::Routes', async () => {
       email: 'test@email.com',
       password: 'password',
     });
+
+    // console.log(res.body);
 
     expect(res.statusCode).toBe(HTTPStatus.OK);
     expect(res.body).toHaveProperty('id');
