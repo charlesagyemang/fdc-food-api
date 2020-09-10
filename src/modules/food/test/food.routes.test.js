@@ -10,4 +10,11 @@ describe('Food::Routes', async () => {
     expect(body).toHaveProperty('data');
     expect(body.data).toBe('Ping');
   });
+  it.only('should get all foods successfully', async () => {
+    const { body } = await request(server).get('/api/food/all');
+    console.log(body);
+    // expect(statusCode).toBe(HTTPStatus.OK);
+    // expect(body).toHaveProperty('data');
+    // expect(body.data).toBe('Ping');
+  });
 });
