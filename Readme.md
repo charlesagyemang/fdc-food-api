@@ -1,7 +1,9 @@
 ## API DOCS
 
 #### GET FOOD BY FOODNAME
+#### URL  => https://fdc-food-api.herokuapp.com/api/
 #### PATH => /food/find
+#### FULL URL => https://fdc-food-api.herokuapp.com/api/food/find
 
 #### Post Body
 ```javascript
