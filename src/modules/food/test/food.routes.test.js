@@ -22,7 +22,7 @@ describe('Food::Routes', async () => {
     const { body } = await request(server).post('/api/food/find').send({ foodName: 'pepper' });
     const $ = await scrapeSiteByUrl('https://google.com/');
     console.log($('#SIvCob').text());
-    // console.log(body);
+    console.log(body);
     // expect(statusCode).toBe(HTTPStatus.OK);
     // expect(body).toHaveProperty('data');
     // expect(body.data).toBe('Ping');
