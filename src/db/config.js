@@ -2,7 +2,7 @@ module.exports = {
   development: {
     username: null,
     password: null,
-    database: 'food api-dev',
+    database: 'food-api-dev',
     host: 'localhost',
     dialect: 'postgres',
     seederStorage: 'json',
@@ -11,7 +11,7 @@ module.exports = {
   test: {
     username: null,
     password: null,
-    database: 'food api-test',
+    database: 'food-api-test',
     host: 'localhost',
     dialect: 'postgres',
     seederStorage: 'json',

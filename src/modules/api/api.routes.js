@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { version } from '../../../package.json';
 import UserRouter from '../user/user.routes';
+import FoodRouter from '../food/food.routes';
 
 // Declare Router
 const apiRouter = Router();
@@ -12,6 +13,7 @@ apiRouter.get('/', (req, res) => {
 
 // Plug module routers
 apiRouter.use('/user', UserRouter);
+apiRouter.use('/food', FoodRouter);
 
 //
 
