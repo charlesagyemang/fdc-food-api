@@ -20,9 +20,9 @@ describe('Food::Routes', async () => {
   });
   it.only('should get single food details successfully', async () => {
     const { body } = await request(server).post('/api/food/find').send({ foodName: 'pepper' });
-    const mumu = await scrapeSiteByUrl('https://remoteok.io/');
-    console.log(mumu('.top > .action-post-job').text());
-    console.log(body);
+    const $ = await scrapeSiteByUrl('https://google.com/');
+    console.log($('#SIvCob').text());
+    // console.log(body);
     // expect(statusCode).toBe(HTTPStatus.OK);
     // expect(body).toHaveProperty('data');
     // expect(body.data).toBe('Ping');
