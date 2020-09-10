@@ -8,6 +8,7 @@ const UserRouter = Router();
 
 UserRouter.get('/ping', c.ping);
 UserRouter.get('/all', c.getAllFoods);
+UserRouter.post('/find', c.getSingleFoodDetails);
 // UserRouter.post('/login', validate(v.login), c.login)
 
 
