@@ -19,10 +19,10 @@ describe('Food::Routes', async () => {
     // expect(body.data).toBe('Ping');
   });
   it.only('should get single food details successfully', async () => {
-    const { body } = await request(server).post('/api/food/find').send({ foodName: 'pepper' });
+    const { body } = await request(server).post('/api/food/find').send({ foodName: 'jollof' });
     const $ = await scrapeSiteByUrl('https://google.com/');
     console.log($('#SIvCob').text());
-    console.log(body);
+    console.log(body[0]);
     // expect(statusCode).toBe(HTTPStatus.OK);
     // expect(body).toHaveProperty('data');
     // expect(body.data).toBe('Ping');
