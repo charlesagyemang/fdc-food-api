@@ -1,7 +1,7 @@
 {
   "name": "food-api",
   "version": "0.0.0",
-  "description": "Express Api Boilerplate",
+  "description": "Blending 101 Wiki Food Api",
   "main": "dist/server.js",
   "repository": "",
   "author": "Kingsley Ofosu, Charles Opoku-Agyemang",
